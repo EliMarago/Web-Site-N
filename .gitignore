@@ -1,0 +1,7 @@
+# File di sistema e IDE
+.DS_Store
+.vscode/
+
+
+# Dipendenze Node.js
+node_modules/
