@@ -49,3 +49,16 @@ target.classList.add("blinking")
 type();
 
 
+
+gsap.from(".step-img-box",{
+  y:40,
+  opacity:0,
+  duration:1,
+  ease:"power3.out"
+});
+AOS.init({
+  duration: 900,
+  easing: "ease-out",
+  once: true,
+});
+
