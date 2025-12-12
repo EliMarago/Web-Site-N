@@ -62,3 +62,17 @@ AOS.init({
   once: true,
 });
 
+const text2 = "Prossimo Evento";
+const target2 = document.getElementById("dynamic-text");
+let j = 0;
+
+function typeText2(){
+  if(j < text2.length){
+    target2.textContent += text2.charAt(j);
+    j++;
+    setTimeout(typeText2, 150);
+  }
+}
+
+target2.textContent = "";
+typeText2();
