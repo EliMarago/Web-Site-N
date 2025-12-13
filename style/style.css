@@ -1064,6 +1064,11 @@
   font-weight: bold;
   font-size: 14px;
 }
+.feature img{
+  height: 130px;
+  width: 130px;
+  margin-left: -20px;
+}
 
 /* POPULAR CARD STYLING */
 .popular {
