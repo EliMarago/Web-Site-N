@@ -1,0 +1,117 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    z-index: 999;
+  }
+  
+.modal__header{
+    color: #003870;
+    padding:40px;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    background: rgba(243, 243, 243, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1000;
+    transition: all 0.5s;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;           
+  }
+  
+  .contact-form label {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;             
+    padding: 1rem;          
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;  
+  }
+  
+  .contact-form textarea {
+    min-height: 120px;       
+    resize: vertical;        
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary-light);
+    box-shadow: 0 0 0 3px rgba(0, 119, 200, 0.2);
+  }
+  
+  .btn--full.enter {
+    background-color: var(--color-primary);
+    cursor: pointer;
+    padding: 0.8rem 1.6rem;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  
+  .btn--full.enter:hover {
+    background-color: var(--color-primary-light);
+  }
+  
+  .btn--close-modal {
+    font-family: inherit;
+    color: #003870;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.4rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 14px;
+  }
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @media (max-width: 768px) {
+    .modal {
+      width: 95%;
+      max-width: 95%;
+      padding: 1.5rem;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 1.2rem;
+      padding: 0.8rem;
+    }
+  
+    .btn--close-modal {
+      font-size: 2rem;
+    }
+  }
+  
+  
+
+
+  

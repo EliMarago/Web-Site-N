@@ -654,15 +654,10 @@
     margin-top: -30px;
     margin-left: 20px;
   }
-  .footer .logo-scritta{
-    height: 190px;
-    margin-left: -8px;
-  }
-  .container-logo-footer {
-    display: flex;
-    margin-top: -100px;
-  }
-  
+.footer-logo img{
+  height: 128px; 
+  margin-right: 4px ;
+}
   .footer-nav {
     list-style: none;
     display: flex;
@@ -687,6 +682,7 @@
     line-height: 3rem;
 
   }
+
   .contacts a {
     color: var(--color-white);
     text-decoration: none;
@@ -707,9 +703,27 @@
     margin-bottom: 40px;
     font-size: 1.8rem;
   }
-  .icons-container{
-    fill: #e9f4ff;
-    width: 80px;
+  .container-icon {
+    display: flex;
+    gap: 16px;
+    fill: var(--color-white);
+    margin-top: 20px;
+  }
+  
+  .container-icon a {
+    display: inline-flex;
+    cursor: pointer;
+  }
+  
+  .container-icon svg {
+    width: 28px;
+    height: 28px;
+    pointer-events: none;
+  }
+  
+  
+  .container-icon a {
+    display: inline-flex;
     cursor: pointer;
   }
   .icons-container-2{
@@ -722,11 +736,8 @@
     justify-content: center;
     align-items: center;
   }
-  .container-icon{
-    margin-top: 20px;
-    display: flex;
-    gap: 7px;
-  }
+
+  
   /* =========================
      RESPONSIVE
   ========================= */
@@ -966,7 +977,7 @@
   background: white;
   padding: 40px 30px;
   border-radius: 16px;
-  border: 1px solid #e7e7e7;
+  border: 2px solid #949494;
   box-shadow: 0 6px 20px rgba(0,0,0,0.05);
   transition: transform .3s ease, box-shadow .3s ease;
 }
@@ -978,6 +989,7 @@
 .pricing-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+
 }
 
 .pricing-card h3 {
